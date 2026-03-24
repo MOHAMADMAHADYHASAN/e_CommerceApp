@@ -50,4 +50,26 @@ class UTexts {
       'We’ve sent a password reset link to your email. Please check your inbox and follow the instructions to reset your password';
   static const String done = 'Done';
   static const String reSendEmail = 'Resend Email';
+
+  // Verify Email Screen
+  static const String verifyEmailTitle = 'Verify your email address!';
+  static const String unKnownEmail1 = 'unKnownpro@gmail.com';
+
+  static const String verifyEmailSubTitle =
+      'We’ve sent a verification link to your email. Please check your inbox and click the link to verify your account';
+  static const String uContinue = 'Continue';
+  static const String resendEmail = 'Resend Email';
+
+
+
+  // Account Created Successfully Screen
+  static const String accountCreatedTitle = 'Your account successfully created';
+  static const String accountCreatedSubTitle = 'Congratulations! Your account has been successfully created. You can now explore all the amazing features, start personalizing your experience, and enjoy seamless access to our services. Let’s get started!';
+
+  static const String homeAppBarTitle = 'Good Morning';
+  static const String homeAppBarSubTitle = 'Unknown Pro';
+  static const String searchBarTitle = 'Search in Store';
+  static const String popularCategories = 'Popular Categories';
+
+
 }

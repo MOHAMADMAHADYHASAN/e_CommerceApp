@@ -1,10 +1,13 @@
 import 'package:e_commerce/features/authentication/view/signup/widgets/uPrivacy_policy_cheakbox.dart';
 import 'package:flutter/material.dart';
+import 'package:get_x/get_core/src/get_main.dart';
+import 'package:get_x/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/button/u_elevated_button.dart';
 import '../../../../../utils/constants/uSize.dart';
 import '../../../../../utils/constants/utext.dart';
+import '../verify_email.dart';
 class USignupForm extends StatelessWidget {
   const USignupForm({
     super.key,
@@ -72,7 +75,7 @@ class USignupForm extends StatelessWidget {
 
         /// create account
         UElevatedButton(
-          onPressed: () {},
+          onPressed: ()=>Get.to(()=>VerifyEmailScreen()),
           child: Text(UTexts.createAccount),
         ),
       ],
