@@ -6,6 +6,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../common/widgets/button/u_elevated_button.dart';
 import '../../../../../utils/constants/uSize.dart';
 import '../../../../../utils/constants/utext.dart';
+import '../../forget_password/forget_password.dart';
 import '../../signup/signup.dart';
 
 class ULoginForm extends StatelessWidget {
@@ -46,7 +47,10 @@ class ULoginForm extends StatelessWidget {
             ),
 
             //forget password
-            TextButton(onPressed: () {}, child: Text(UTexts.forgetPassword)),
+            TextButton(
+              onPressed: () => Get.to(() => ForgetPasswordScreen()),
+              child: Text(UTexts.forgetPassword,),
+            ),
           ],
         ),
         SizedBox(height: USizes.spaceBtwSections),
