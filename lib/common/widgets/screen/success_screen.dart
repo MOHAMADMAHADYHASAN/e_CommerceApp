@@ -1,7 +1,6 @@
 import 'package:e_commerce/common/style/padding.dart';
 import 'package:e_commerce/common/widgets/button/u_elevated_button.dart';
 import 'package:e_commerce/utils/constants/uSize.dart';
-import 'package:e_commerce/utils/constants/uimages.dart';
 import 'package:e_commerce/utils/constants/utext.dart';
 import 'package:e_commerce/utils/helpers/device_helpers.dart';
 import 'package:flutter/material.dart';
