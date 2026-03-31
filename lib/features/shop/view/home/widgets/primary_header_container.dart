@@ -7,15 +7,20 @@ import '../../../../../utils/constants/uColors.dart';
 
 class UPrimaryHeaderContainer extends StatelessWidget {
   final Widget child;
+  final double height;
 
-  const UPrimaryHeaderContainer({super.key, required this.child});
+  const UPrimaryHeaderContainer({
+    super.key,
+    required this.child,
+    required this.height,
+  });
 
   @override
   Widget build(BuildContext context) {
     //Custom clipper
     return URoundedEdgesContainer(
       child: Container(
-        height: USizes.homePrimaryHeaderHeight,
+        height: height,
         color: UColors.primary,
         child: Stack(
           children: [

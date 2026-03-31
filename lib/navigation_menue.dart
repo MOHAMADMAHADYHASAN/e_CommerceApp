@@ -7,13 +7,15 @@ import 'package:get_x/get_instance/src/extension_instance.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'features/shop/view/home/home.dart';
+import 'features/shop/view/store/store_screen.dart';
 
 class NavigationMenue extends StatelessWidget {
-  const NavigationMenue({super.key});
+  NavigationMenue({super.key});
+
+  final controller = Get.put(NavigationController());
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(NavigationController());
     bool dark = UHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: Obx(() => controller.screen[controller.selectedIndex.value]),
@@ -42,5 +44,5 @@ class NavigationMenue extends StatelessWidget {
 
 class NavigationController extends GetxController {
   RxInt selectedIndex = 0.obs;
-  List<Widget> screen = [HomeScreen(), Container(), Container(), Container()];
+  List<Widget> screen = [HomeScreen(), StoreScreen(), Container(), Container()];
 }

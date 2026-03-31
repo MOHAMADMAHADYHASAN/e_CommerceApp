@@ -1,4 +1,5 @@
 import 'package:e_commerce/utils/constants/uimages.dart';
+import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../common/widgets/image_text/vertical_image_text.dart';
@@ -11,6 +12,7 @@ class UHomeCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool dark = UHelperFunctions.isDarkMode(context);
     return Padding(
       padding: const EdgeInsets.only(left: USizes.spaceBtwSections),
       child: Column(
@@ -21,7 +23,7 @@ class UHomeCategories extends StatelessWidget {
             UTexts.popularCategories,
             style: Theme.of(
               context,
-            ).textTheme.headlineSmall!.apply(color: UColors.black),
+            ).textTheme.headlineSmall!.apply(color:dark?UColors.white: UColors.black),
           ),
           SizedBox(height: USizes.spaceBtwItems),
           //Categories List
