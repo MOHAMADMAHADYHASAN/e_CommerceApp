@@ -17,7 +17,7 @@ class UGridLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
       itemCount: itemCount,
       padding: EdgeInsets.zero,
       shrinkWrap: true,

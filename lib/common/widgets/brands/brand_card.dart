@@ -8,13 +8,16 @@ import '../customShape/rounded_container.dart';
 import '../texts/brand_title_with_verify_icon.dart';
 
 class UBrandCard extends StatelessWidget {
-  const UBrandCard({super.key});
+  final bool showBorder;
+
+  const UBrandCard({super.key, this.showBorder = true});
 
   @override
   Widget build(BuildContext context) {
     return URoundedContainer(
+      height: USizes.brandCardHeight,
       width: USizes.brandCardWidth,
-      showBorder: true,
+      showBorder: showBorder,
       padding: EdgeInsets.all(USizes.sm),
       backgroundColor: Colors.transparent,
       child: Row(
@@ -44,7 +47,10 @@ class UBrandCard extends StatelessWidget {
                 //Text
                 Text(
                   "172 products",
-                  style: Theme.of(context).textTheme.labelMedium,
+                  style: Theme
+                      .of(context)
+                      .textTheme
+                      .labelMedium,
                   overflow: TextOverflow.ellipsis,
                 ),
               ],

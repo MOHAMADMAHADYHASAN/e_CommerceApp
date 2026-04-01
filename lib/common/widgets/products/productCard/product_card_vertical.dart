@@ -9,7 +9,6 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../style/shadow.dart';
 import '../../icons/circuler_icon.dart';
-import '../../texts/brand_title_text.dart';
 import '../../texts/brand_title_with_verify_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
@@ -38,7 +37,7 @@ class UProductCardVertical extends StatelessWidget {
             URoundedContainer(
               width: 180,
               padding: EdgeInsets.all(USizes.sm),
-              backgroundColor: dark ? UColors.dark : UColors.light,
+              backgroundColor: dark ? UColors.darkGrey : UColors.light,
               child: Stack(
                 children: [
                   // Thambnail...

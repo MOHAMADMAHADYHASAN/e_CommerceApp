@@ -16,7 +16,7 @@ class UStorePrimaryHeader extends StatelessWidget {
     return Stack(
       children: [
         //Total height + 20
-        SizedBox(height: USizes.storePrimaryHeaderHeight+15),
+        SizedBox(height: USizes.storePrimaryHeaderHeight+10),
 
         //Primary header Container
         UPrimaryHeaderContainer(
