@@ -1,5 +1,4 @@
 import 'package:e_commerce/features/authentication/viewModel/onboarding/onboarding_viewModel.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get_x/get.dart';
 

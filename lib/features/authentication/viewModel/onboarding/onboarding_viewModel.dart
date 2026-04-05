@@ -1,10 +1,6 @@
 import 'package:e_commerce/features/authentication/view/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get_x/get.dart';
-import 'package:get_x/get_core/src/get_main.dart';
-import 'package:get_x/get_instance/src/extension_instance.dart';
-import 'package:get_x/get_rx/src/rx_types/rx_types.dart';
-import 'package:get_x/get_state_manager/src/simple/get_controllers.dart';
 
 class OnBoardingViewModel extends GetxController {
   static OnBoardingViewModel get instance => Get.find();
@@ -31,7 +27,7 @@ class OnBoardingViewModel extends GetxController {
       Get.offAll(() => LogInScreen());
       return;
     }
-    ;
+
     currentIndex.value++;
     pageController.jumpToPage(currentIndex.value);
   }

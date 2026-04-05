@@ -1,7 +1,6 @@
 import 'package:e_commerce/navigation_menue.dart';
 import 'package:flutter/material.dart';
 import 'package:get_x/get.dart';
-import 'package:get_x/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/button/u_elevated_button.dart';

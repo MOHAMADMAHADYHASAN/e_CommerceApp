@@ -2,7 +2,6 @@ import 'package:e_commerce/common/widgets/texts/section_heading.dart';
 import 'package:e_commerce/features/shop/view/store/widgets/category_tab.dart';
 import 'package:e_commerce/features/shop/view/store/widgets/store_primary_header.dart';
 
-import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../common/widgets/appBar/tab_bar.dart';
@@ -14,7 +13,7 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool dark = UHelperFunctions.isDarkMode(context);
+
     return DefaultTabController(
       length: 5,
       child: Scaffold(
@@ -24,7 +23,7 @@ class StoreScreen extends StatelessWidget {
               SliverAppBar(
                 automaticallyImplyLeading: false,
                 //300
-                expandedHeight: 330,
+                expandedHeight: 340,
                 pinned: true,
                 floating: false,
                 flexibleSpace: SingleChildScrollView(
@@ -51,7 +50,11 @@ class StoreScreen extends StatelessWidget {
                                     SizedBox(width: USizes.spaceBtwItems / 2),
                                 shrinkWrap: true,
                                 itemCount: 10,
-                                itemBuilder: (context, index) => UBrandCard(),
+                                itemBuilder: (context, index) => SizedBox(
+                                  width: USizes.brandCardWidth,
+
+                                  child: UBrandCard(),
+                                ),
                               ),
                             ),
                           ],

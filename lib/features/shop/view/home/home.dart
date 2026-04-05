@@ -1,6 +1,6 @@
 import 'package:e_commerce/features/shop/view/home/widgets/home_appbar.dart';
 import 'package:e_commerce/features/shop/view/home/widgets/home_categories.dart';
-import 'package:e_commerce/features/shop/view/home/widgets/primary_header_container.dart';
+import 'package:e_commerce/common/widgets/customShape/primary_header_container.dart';
 import 'package:e_commerce/features/shop/view/home/widgets/promo_slider.dart';
 import 'package:e_commerce/features/shop/viewModel/home/home_Controller.dart';
 import 'package:e_commerce/utils/constants/uSize.dart';

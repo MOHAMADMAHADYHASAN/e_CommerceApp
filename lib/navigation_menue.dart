@@ -2,12 +2,12 @@ import 'package:e_commerce/utils/constants/uColors.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get_x/get.dart';
-import 'package:get_x/get_core/src/get_main.dart';
-import 'package:get_x/get_instance/src/extension_instance.dart';
 import 'package:iconsax/iconsax.dart';
 
+import 'features/personalization/screen/profile/profile.dart';
 import 'features/shop/view/home/home.dart';
 import 'features/shop/view/store/store_screen.dart';
+import 'features/shop/view/wishList/wish_list.dart';
 
 class NavigationMenue extends StatelessWidget {
   NavigationMenue({super.key});
@@ -43,6 +43,12 @@ class NavigationMenue extends StatelessWidget {
 }
 
 class NavigationController extends GetxController {
+  static NavigationController get instance => Get.find();
   RxInt selectedIndex = 0.obs;
-  List<Widget> screen = [HomeScreen(), StoreScreen(), Container(), Container()];
+  List<Widget> screen = [
+    HomeScreen(),
+    StoreScreen(),
+    WishListScreen(),
+    ProfileScreen(),
+  ];
 }

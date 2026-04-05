@@ -4,13 +4,13 @@ import '../../../utils/constants/uSize.dart';
 
 class UGridLayout extends StatelessWidget {
   final int itemCount;
-  final double? mainAxisCount;
+  final double? mainAxisExtent;
   final Widget Function(BuildContext context, int index) itemBuilder;
 
-  const UGridLayout({
+   UGridLayout({
     super.key,
     required this.itemCount,
-    this.mainAxisCount = 200,
+    this.mainAxisExtent = 288 ,
     required this.itemBuilder,
   });
 
@@ -25,7 +25,7 @@ class UGridLayout extends StatelessWidget {
         crossAxisCount: 2,
         mainAxisSpacing: USizes.gridViewSpacing,
         crossAxisSpacing: USizes.gridViewSpacing,
-        mainAxisExtent: 270,
+        mainAxisExtent: mainAxisExtent,
       ),
 
       itemBuilder: itemBuilder,

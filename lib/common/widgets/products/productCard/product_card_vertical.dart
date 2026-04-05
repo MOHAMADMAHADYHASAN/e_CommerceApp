@@ -5,8 +5,10 @@ import 'package:e_commerce/utils/constants/uSize.dart';
 import 'package:e_commerce/utils/constants/uimages.dart';
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get_x/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../features/shop/view/products_details/products_details_screen.dart';
 import '../../../style/shadow.dart';
 import '../../icons/circuler_icon.dart';
 import '../../texts/brand_title_with_verify_icon.dart';
@@ -20,7 +22,7 @@ class UProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     bool dark = UHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () =>Get.to(()=>UProductsDetailsScreen()),
       child: Container(
         width: 180,
 
@@ -35,13 +37,13 @@ class UProductCardVertical extends StatelessWidget {
           children: [
             //Thambnail,Favorite Button and Discount tag
             URoundedContainer(
-              width: 180,
+              height: 180,
               padding: EdgeInsets.all(USizes.sm),
               backgroundColor: dark ? UColors.darkGrey : UColors.light,
               child: Stack(
                 children: [
                   // Thambnail...
-                  URoundedImage(imageURL: UImages.productImage4a),
+                  Center(child: URoundedImage(imageURL: UImages.productImage4a)),
 
                   //Discount Tag
                   Positioned(
