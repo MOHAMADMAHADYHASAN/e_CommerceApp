@@ -1,7 +1,10 @@
 import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get_x/get.dart';
+import 'package:get_x/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../features/shop/view/cart/cart.dart';
 import '../../../../utils/constants/uColors.dart';
 
 class UCartCounterIcon extends StatelessWidget {
@@ -40,7 +43,7 @@ class UCartCounterIcon extends StatelessWidget {
         ),
         // Cart Icon
         IconButton(
-          onPressed: () {},
+          onPressed: ()=>Get.to(()=>UCartScreen()),
           icon: Icon(Iconsax.shopping_bag),
           color: dark ? UColors.dark : UColors.light,
         ),
