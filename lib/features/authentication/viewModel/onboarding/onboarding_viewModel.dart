@@ -10,7 +10,7 @@ class OnBoardingViewModel extends GetxController {
   RxInt currentIndex = 0.obs;
 
   // Update current index when page scroll
-  void updatePageIndicator(index) {
+  void updatePageIndicator( int index) {
     currentIndex.value = index;
   }
 
